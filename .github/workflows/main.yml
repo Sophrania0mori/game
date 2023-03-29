@@ -31,7 +31,6 @@ jobs:
           git lfs pull
           git add .
           git reset --hard
-
       - name: Restore Library cache
         uses: actions/cache@v2
         with:
@@ -40,7 +39,6 @@ jobs:
           restore-keys: |
             Library-build-
             Library-
-
       - uses: game-ci/unity-builder@v2
         with:
           targetPlatform: WebGL
@@ -76,7 +74,6 @@ jobs:
           git lfs pull
           git add .
           git reset --hard
-
       - name: Restore Library cache
         uses: actions/cache@v2
         with:
@@ -85,7 +82,6 @@ jobs:
           restore-keys: |
             Library-build-
             Library-
-
       - uses: game-ci/unity-builder@v2
         with:
           targetPlatform: StandaloneWindows64
@@ -121,7 +117,6 @@ jobs:
           git lfs pull
           git add .
           git reset --hard
-
       - name: Restore Library cache
         uses: actions/cache@v2
         with:
@@ -130,7 +125,6 @@ jobs:
           restore-keys: |
             Library-build-
             Library-
-
       - uses: game-ci/unity-builder@v2
         with:
           targetPlatform: StandaloneOSX
@@ -166,7 +160,6 @@ jobs:
           git lfs pull
           git add .
           git reset --hard
-
       - name: Restore Library cache
         uses: actions/cache@v2
         with:
@@ -175,7 +168,6 @@ jobs:
           restore-keys: |
             Library-build-
             Library-
-
       - uses: game-ci/unity-builder@v2
         with:
           targetPlatform: StandaloneLinux64
@@ -205,5 +197,4 @@ jobs:
         with:
           token: ${{ secrets.DEPLOY_TOKEN }}
           branch: gh-pages
-          folder: build/WebGL # or target-folder: build/WebGL
-          
+          folder: build/WebGL
