@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Death : MonoBehaviour
+public class DeathGoblin : MonoBehaviour
 {
     [SerializeField] private float attackDistance = 2f;
     [SerializeField] private GameObject player;
