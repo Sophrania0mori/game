@@ -3,11 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class ReloadScene : MonoBehaviour
 {
-    void Update()
+    void Start()
     {
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }
+       SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
