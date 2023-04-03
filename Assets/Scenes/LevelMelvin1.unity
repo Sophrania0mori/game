@@ -6846,6 +6846,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8384742368854133586, guid: 3dec2a4c6b2f940919c8cca90801d4b8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8384742368854133586, guid: 3dec2a4c6b2f940919c8cca90801d4b8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 8384742369064306404, guid: 3dec2a4c6b2f940919c8cca90801d4b8, type: 3}
+    - target: {fileID: 8384742368854133586, guid: 3dec2a4c6b2f940919c8cca90801d4b8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BackTwoScenes
+      objectReference: {fileID: 0}
+    - target: {fileID: 8384742368854133586, guid: 3dec2a4c6b2f940919c8cca90801d4b8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8384742368854133586, guid: 3dec2a4c6b2f940919c8cca90801d4b8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: PauseMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 8384742369064306400, guid: 3dec2a4c6b2f940919c8cca90801d4b8, type: 3}
       propertyPath: m_Pivot.x
       value: 0

@@ -28,8 +28,13 @@ public class PauseMenu : MonoBehaviour
 
 public void BackToHome()
     {
-        // When start is clicked, load the first level by adding 1 to the current scene index
+        // When button is pressed, load the scene with the index of the current scene - 1
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    }
+public void BackTwoScenes()
+    {
+        // When button is pressed, load the scene with the index of the current scene - 2
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
     }
 
     public void Resume()
