@@ -1,0 +1,4 @@
+Dit bestand is enkel bedoelt om te demonstreren hoe de version control werkt
+
+
+Voorbeeld 2 pull request naar andere branch
