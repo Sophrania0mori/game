@@ -1551,7 +1551,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99dea0338396cb84496a652028c685e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionDistance: 5
+  detectionDistance: 2
   player: {fileID: 1911896913}
   checkpointFlag: {fileID: 613013774}
 --- !u!1 &710863383

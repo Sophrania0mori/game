@@ -11,6 +11,7 @@ public class Checkpoint : MonoBehaviour
     private void Start()
     {
         flagRenderer = checkpointFlag.GetComponent<Renderer>();
+        flagRenderer.material.color = Color.black;
     }
 
     private void Update()
@@ -19,8 +20,8 @@ public class Checkpoint : MonoBehaviour
 
         if (distance <= detectionDistance)
         {
+            flagRenderer.material.color = Color.white;
             PlayerPrefs.SetInt("Checkpoint1", 1);
-            flagRenderer.material.color = new Color(0.25f, 0.25f, 0.25f, 1);
         }
 
         if (PlayerPrefs.HasKey("Checkpoint1"))
