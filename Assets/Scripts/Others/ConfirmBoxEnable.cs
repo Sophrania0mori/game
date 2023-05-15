@@ -9,6 +9,7 @@ public class ConfirmBoxEnable : MonoBehaviour
         if (Input.GetKey(KeyCode.R))
         {
             ConfirmationBox.gameObject.SetActive(true);
+            Time.timeScale = 0;
         }
     }
 }
