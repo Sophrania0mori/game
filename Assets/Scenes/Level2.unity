@@ -249,10 +249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a389e9c21bd87c45b5c09f46b410a05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
   rectTransform: {fileID: 114297989}
-  distanceToMove: 10
-  delay: 5
 --- !u!1001 &125485666
 PrefabInstance:
   m_ObjectHideFlags: 0
