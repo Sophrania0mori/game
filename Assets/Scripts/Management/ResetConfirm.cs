@@ -33,6 +33,7 @@ public class ResetConfirm : MonoBehaviour
 
             if (PlayerPrefs.HasKey("Level2Active"))
             {
+                Debug.Log("Level 2 reset");
                 PlayerPrefs.SetInt("Checkpoint1", 0);
             }
 

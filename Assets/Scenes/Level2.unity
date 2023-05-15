@@ -1548,6 +1548,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectionDistance: 5
   player: {fileID: 1911896913}
+  checkpoint: {fileID: 613013774}
 --- !u!1 &710863383
 GameObject:
   m_ObjectHideFlags: 0
