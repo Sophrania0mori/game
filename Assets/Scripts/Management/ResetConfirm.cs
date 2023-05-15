@@ -8,6 +8,8 @@ public class ResetConfirm : MonoBehaviour
     [SerializeField] private TextMeshProUGUI textObject;
     [SerializeField] private GameObject thisGameObject;
 
+    private float timesClicked = 0;
+
     private void Start()
     {
         textObject.color = Color.red;
@@ -17,21 +19,25 @@ public class ResetConfirm : MonoBehaviour
 
     public void OnButtonClick()
     {
-        textObject.color = new Color(0.196f, 0.196f, 0.196f, 1);
-        textObject.text = "Reset level";
-
-        if (PlayerPrefs.HasKey("Level1Active"))
+        if (timesClicked == 1)
         {
-            PlayerPrefs.SetInt("WalkTutorial", 0);
-            PlayerPrefs.SetInt("JumpTutorial", 0);
-            PlayerPrefs.SetInt("EnemyTutorial", 0);
-        }
+            textObject.color = new Color(0.196f, 0.196f, 0.196f, 1);
+            textObject.text = "Reset level";
 
-        if (PlayerPrefs.HasKey("Level2Active"))
-        {
-            PlayerPrefs.SetInt("Checkpoint1", 0);
-        }
+            if (PlayerPrefs.HasKey("Level1Active"))
+            {
+                PlayerPrefs.SetInt("WalkTutorial", 0);
+                PlayerPrefs.SetInt("JumpTutorial", 0);
+                PlayerPrefs.SetInt("EnemyTutorial", 0);
+            }
 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            if (PlayerPrefs.HasKey("Level2Active"))
+            {
+                PlayerPrefs.SetInt("Checkpoint1", 0);
+            }
+
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+        timesClicked = 1;
     }
 }
