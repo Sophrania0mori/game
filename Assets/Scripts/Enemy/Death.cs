@@ -19,7 +19,7 @@ public class Death : MonoBehaviour
     {
         playerCollision = player.GetComponent<CapsuleCollider2D>();
         playerRigidbody2D = player.GetComponent<Rigidbody2D>();
-        ScriptToDisable1 = player.GetComponent<CharacterMove>();
+        ScriptToDisable1 = player.GetComponent<MoveSide>();
         ScriptToDisable2 = player.GetComponent<EnemyKiller>();
     }
 
