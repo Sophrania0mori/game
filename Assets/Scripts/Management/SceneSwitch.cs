@@ -16,7 +16,17 @@ public class SceneSwitch : MonoBehaviour
 
         if (PlayerCharacter.position.x > -2.4 && PlayerCharacter.position.x < -2.2 && PlayerCharacter.position.y > -2.1 && PlayerCharacter.position.y < -1.9)
         {
-            SceneManager.LoadScene(3);
+            if (PlayerPrefs.HasKey("Level1Complete"))
+            {
+                if (PlayerPrefs.GetInt("Level1Complete") == 1)
+                {
+                    SceneManager.LoadScene(3);
+                }
+            }
+            else
+            {
+                Debug.Log("Player is trying to enter level 2, but level 1 was not completed.");
+            }
         }
     }
 }

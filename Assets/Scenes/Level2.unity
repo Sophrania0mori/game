@@ -123,6 +123,136 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &114297987
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 685694395824976925, guid: 2bb911c0795e7044e956df04b00993e3, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 2059590899}
+    - target: {fileID: 685694396540791913, guid: 2bb911c0795e7044e956df04b00993e3, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 685694396540791913, guid: 2bb911c0795e7044e956df04b00993e3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.549834
+      objectReference: {fileID: 0}
+    - target: {fileID: 685694396540791913, guid: 2bb911c0795e7044e956df04b00993e3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.5983202
+      objectReference: {fileID: 0}
+    - target: {fileID: 685694396540791913, guid: 2bb911c0795e7044e956df04b00993e3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.3798048
+      objectReference: {fileID: 0}
+    - target: {fileID: 685694396540791913, guid: 2bb911c0795e7044e956df04b00993e3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 685694396540791913, guid: 2bb911c0795e7044e956df04b00993e3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 685694396540791913, guid: 2bb911c0795e7044e956df04b00993e3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 685694396540791913, guid: 2bb911c0795e7044e956df04b00993e3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 685694396540791913, guid: 2bb911c0795e7044e956df04b00993e3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 685694396540791913, guid: 2bb911c0795e7044e956df04b00993e3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 685694396540791913, guid: 2bb911c0795e7044e956df04b00993e3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 685694396540791914, guid: 2bb911c0795e7044e956df04b00993e3, type: 3}
+      propertyPath: m_Name
+      value: CheckpointTutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 685694396540791914, guid: 2bb911c0795e7044e956df04b00993e3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 685694397118107944, guid: 2bb911c0795e7044e956df04b00993e3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -400.00024
+      objectReference: {fileID: 0}
+    - target: {fileID: 685694397118107958, guid: 2bb911c0795e7044e956df04b00993e3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 685694397197729646, guid: 2bb911c0795e7044e956df04b00993e3, type: 3}
+      propertyPath: m_text
+      value: Je hebt een checkpoint gehaald! Als je nu wordt verslagen, zal je op
+        dit punt terug komen.
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 685694396540791914, guid: 2bb911c0795e7044e956df04b00993e3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 114297990}
+    - targetCorrespondingSourceObject: {fileID: 685694396540791914, guid: 2bb911c0795e7044e956df04b00993e3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 114297992}
+  m_SourcePrefab: {fileID: 100100000, guid: 2bb911c0795e7044e956df04b00993e3, type: 3}
+--- !u!1 &114297988 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 685694396540791914, guid: 2bb911c0795e7044e956df04b00993e3, type: 3}
+  m_PrefabInstance: {fileID: 114297987}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &114297989 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 685694395824976912, guid: 2bb911c0795e7044e956df04b00993e3, type: 3}
+  m_PrefabInstance: {fileID: 114297987}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &114297990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114297988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f28765dfca200e4badb27f4b3554e34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  rectTransform: {fileID: 114297989}
+  distanceToMove: 10
+  delay: 0
+--- !u!114 &114297992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114297988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a389e9c21bd87c45b5c09f46b410a05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  rectTransform: {fileID: 114297989}
+  distanceToMove: 10
+  delay: 5
 --- !u!1001 &125485666
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -752,7 +882,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3335870511896439565, guid: c997599ddcdce5846b6bbabc70c1f8ae, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3335870511896439565, guid: c997599ddcdce5846b6bbabc70c1f8ae, type: 3}
       propertyPath: m_LocalPosition.x
@@ -760,7 +890,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3335870511896439565, guid: c997599ddcdce5846b6bbabc70c1f8ae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.38
       objectReference: {fileID: 0}
     - target: {fileID: 3335870511896439565, guid: c997599ddcdce5846b6bbabc70c1f8ae, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1551,8 +1681,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99dea0338396cb84496a652028c685e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionDistance: 5
+  detectionDistance: 2
   player: {fileID: 1911896913}
+  checkpointTutorial: {fileID: 114297988}
+  checkpointFlag: {fileID: 613013774}
+  checkpointAnim: {fileID: 613013775}
 --- !u!1 &710863383
 GameObject:
   m_ObjectHideFlags: 0
@@ -1682,7 +1815,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6368246986973509229, guid: 5a1173160568f4042bec5f62b95b5038, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6368246986973509229, guid: 5a1173160568f4042bec5f62b95b5038, type: 3}
       propertyPath: m_AnchorMax.x
@@ -2067,7 +2200,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3032472237887360026, guid: b367480e581964736a290f84450e5e4f, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 3032472237887360026, guid: b367480e581964736a290f84450e5e4f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10676,7 +10809,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8384742369064306400, guid: 3dec2a4c6b2f940919c8cca90801d4b8, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8384742369064306400, guid: 3dec2a4c6b2f940919c8cca90801d4b8, type: 3}
       propertyPath: m_AnchorMax.x
