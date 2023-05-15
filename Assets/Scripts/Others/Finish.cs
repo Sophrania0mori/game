@@ -10,7 +10,8 @@ public class Finish : MonoBehaviour
     {
         if (PlayerCharacter.position.x > FinishPosition)
         {
-            SceneManager.LoadScene(sceneBuildIndex:1);
+            PlayerPrefs.SetInt("Level1Complete", 1);
+            SceneManager.LoadScene(1);
         }
     }
 }
