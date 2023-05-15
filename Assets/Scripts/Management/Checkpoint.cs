@@ -5,6 +5,8 @@ public class Checkpoint : MonoBehaviour
     [SerializeField] private float detectionDistance = 5f;
     [SerializeField] private GameObject player;
     [SerializeField] private GameObject checkpointFlag;
+    [SerializeField] private Animator checkpointAnim;
+
     private bool Checkpoint1 = false;
     private Renderer flagRenderer;
 
@@ -21,6 +23,7 @@ public class Checkpoint : MonoBehaviour
         if (distance <= detectionDistance)
         {
             flagRenderer.material.color = Color.white;
+            checkpointAnim.SetBool("PointReached", true);
             PlayerPrefs.SetInt("Checkpoint1", 1);
         }
 
@@ -31,6 +34,8 @@ public class Checkpoint : MonoBehaviour
 
         if (Checkpoint1)
         {
+            flagRenderer.material.color = Color.white;
+            checkpointAnim.SetBool("PointReached", true);
             enabled = false;
         }
     }
