@@ -4,10 +4,12 @@ public class ArrowController : MonoBehaviour
 {
     [SerializeField] private GameObject arrow;
     [SerializeField] private float[] switchXValues;
+    [SerializeField] private float[] switchYValues;
     [SerializeField] private Transform[] targets;
 
     private int currentTargetIndex = 0;
     private Transform playerTransform;
+    private bool movingRight = true;
 
     private void Start()
     {
@@ -35,9 +37,24 @@ public class ArrowController : MonoBehaviour
 
         if (arrow.activeSelf && playerTransform != null)
         {
-            if (playerTransform.position.x > switchXValues[currentTargetIndex])
+            if (movingRight)
             {
-                currentTargetIndex = (currentTargetIndex + 1) % targets.Length;
+                if (playerTransform.position.x > switchXValues[currentTargetIndex] && playerTransform.position.y < switchYValues[currentTargetIndex])
+                {
+                    currentTargetIndex = (currentTargetIndex + 1) % targets.Length;
+                }
+            }
+            else
+            {
+                if (playerTransform.position.x < switchXValues[currentTargetIndex] && playerTransform.position.y > switchYValues[currentTargetIndex])
+                {
+                    currentTargetIndex = (currentTargetIndex + 1) % targets.Length;
+                }
+            }
+
+            if (currentTargetIndex > 3)
+            {
+                movingRight = false;
             }
         }
     }
