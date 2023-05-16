@@ -505,10 +505,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InteractionBox: {fileID: 1504841563}
-  objectToMove: {fileID: 1504841562}
+  objectToMove: {fileID: 1504841565}
   moveDuration: 1
-  moveDistance: 2
-  minYCoordinate: -10
+  moveTo: {x: 61.645, y: -3.5, z: 0}
 --- !u!114 &191103918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1926,7 +1925,7 @@ GameObject:
   - component: {fileID: 514552581}
   - component: {fileID: 514552580}
   - component: {fileID: 514552579}
-  - component: {fileID: 514552578}
+  - component: {fileID: 514552582}
   m_Layer: 5
   m_Name: RESET
   m_TagString: Untagged
@@ -1955,21 +1954,6 @@ RectTransform:
   m_AnchoredPosition: {x: 5.15, y: 0.00000024587}
   m_SizeDelta: {x: 135.22, y: 325.4066}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &514552578
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 514552576}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c0591c174217064f8cbd4a33aa0d117, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InteractionBox: {fileID: 1504841563}
-  objectToMove: {fileID: 1504841562}
-  moveDuration: 1
 --- !u!114 &514552579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2014,8 +1998,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 514552578}
-        m_TargetAssemblyTypeName: ResetToPos, Assembly-CSharp
+      - m_Target: {fileID: 514552582}
+        m_TargetAssemblyTypeName: MoveOnClick, Assembly-CSharp
         m_MethodName: OnButtonClick
         m_Mode: 1
         m_Arguments:
@@ -2064,6 +2048,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 514552576}
   m_CullTransparentMesh: 1
+--- !u!114 &514552582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514552576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd7d0af5b18ae414abfa0382d0c4fb28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InteractionBox: {fileID: 1504841563}
+  objectToMove: {fileID: 1504841565}
+  moveDuration: 1
+  moveTo: {x: 61.645, y: -5.5, z: 0}
 --- !u!1 &519029414
 GameObject:
   m_ObjectHideFlags: 0
@@ -4157,8 +4157,7 @@ MonoBehaviour:
   InteractionBox: {fileID: 578721841}
   objectToMove: {fileID: 1719008514}
   moveDuration: 1
-  moveDistance: -4
-  minYCoordinate: 2
+  moveTo: {x: 0, y: 0, z: 0}
 --- !u!114 &1301660308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4469,6 +4468,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 1336134691}
     m_Modifications:
     - target: {fileID: 7279460843365351648, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: moveTo.x
+      value: 61.645
+      objectReference: {fileID: 0}
+    - target: {fileID: 7279460843365351648, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: moveTo.y
+      value: -1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7279460843365351648, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: moveDistance
       value: -1
       objectReference: {fileID: 0}
@@ -4476,6 +4483,10 @@ PrefabInstance:
       propertyPath: moveDuration
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7279460843365351648, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: objectToMove
+      value: 
+      objectReference: {fileID: 1504841565}
     - target: {fileID: 7279460843365351648, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: minYCoordinate
       value: -10
@@ -4488,13 +4499,29 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0.014993995
       objectReference: {fileID: 0}
+    - target: {fileID: 7279460843365351663, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnButtonClick
+      objectReference: {fileID: 0}
     - target: {fileID: 7279460843687851479, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: m_LocalScale.y
-      value: -5.8302736
+      value: -5.6662793
       objectReference: {fileID: 0}
     - target: {fileID: 7279460843687851479, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 38.708984
+      value: 38.7917
+      objectReference: {fileID: 0}
+    - target: {fileID: 7279460843878385319, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnButtonClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 7279460843878385336, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: moveTo.x
+      value: 61.645
+      objectReference: {fileID: 0}
+    - target: {fileID: 7279460843878385336, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: moveTo.y
+      value: -7.5
       objectReference: {fileID: 0}
     - target: {fileID: 7279460843878385336, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: moveDistance
@@ -4504,6 +4531,10 @@ PrefabInstance:
       propertyPath: moveDuration
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7279460843878385336, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: objectToMove
+      value: 
+      objectReference: {fileID: 1504841565}
     - target: {fileID: 7279460843878385336, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: minYCoordinate
       value: -10
@@ -4522,7 +4553,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7279460844082040168, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: m_text
-      value: platformY = -1;
+      value: platformY = 4;
       objectReference: {fileID: 0}
     - target: {fileID: 7279460844202569908, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4538,7 +4569,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7279460844237762635, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7279460844260936080, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: PlayerCharacter
@@ -4562,11 +4593,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7279460844556371422, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 61.575
+      value: 61.645
       objectReference: {fileID: 0}
     - target: {fileID: 7279460844556371422, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.633
+      value: -5.5
       objectReference: {fileID: 0}
     - target: {fileID: 7279460844556371423, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: m_Layer
@@ -4637,11 +4668,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7279460844785330125, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
   m_PrefabInstance: {fileID: 1504841560}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1504841562 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7279460844556371423, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
-  m_PrefabInstance: {fileID: 1504841560}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1504841563 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7279460844237762635, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
@@ -4650,6 +4676,11 @@ GameObject:
 --- !u!224 &1504841564 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7279460844237762634, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+  m_PrefabInstance: {fileID: 1504841560}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1504841565 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7279460844556371422, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
   m_PrefabInstance: {fileID: 1504841560}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1516239457 stripped
