@@ -3,7 +3,7 @@ using UnityEngine;
 public class ArrowController : MonoBehaviour
 {
     [SerializeField] private GameObject arrow;
-    [SerializeField] private float[] switchXValue = 10f;
+    [SerializeField] private float[] switchXValues;
     [SerializeField] private Transform[] targets;
 
     private int currentTargetIndex = 0;
