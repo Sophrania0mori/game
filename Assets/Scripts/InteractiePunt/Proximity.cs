@@ -26,6 +26,7 @@ public class Proximity : MonoBehaviour
 
         if (isActive && Input.GetKeyDown(KeyCode.E))
         {
+            Time.timeScale = 0;
             InteractionBox.gameObject.SetActive(true);
         }
     }
