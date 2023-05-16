@@ -234,8 +234,7 @@ MonoBehaviour:
   InteractionBox: {fileID: 7279460844237762635}
   objectToMove: {fileID: 7279460844556371423}
   moveDuration: 1
-  moveDistance: -4
-  minYCoordinate: 2
+  moveTo: {x: 0, y: 0, z: 0}
 --- !u!1 &7279460843472542322
 GameObject:
   m_ObjectHideFlags: 0
@@ -638,8 +637,7 @@ MonoBehaviour:
   InteractionBox: {fileID: 7279460844237762635}
   objectToMove: {fileID: 7279460844556371423}
   moveDuration: 1
-  moveDistance: 4
-  minYCoordinate: -2
+  moveTo: {x: 0, y: 0, z: 0}
 --- !u!1 &7279460843937139612
 GameObject:
   m_ObjectHideFlags: 0
@@ -1314,6 +1312,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 2
   m_TargetDisplay: 0
@@ -1469,7 +1468,7 @@ GameObject:
   - component: {fileID: 7279460844556371420}
   - component: {fileID: 7279460844556371421}
   m_Layer: 0
-  m_Name: Door
+  m_Name: Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1559,6 +1558,12 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -1573,6 +1578,25 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -1654,5 +1678,5 @@ Transform:
   - {fileID: 7279460844260936081}
   - {fileID: 7279460844556371422}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
