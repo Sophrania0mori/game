@@ -25819,6 +25819,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1764227581}
     m_Modifications:
+    - target: {fileID: 7279460843365351648, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: moveTo.x
+      value: 64.50026
+      objectReference: {fileID: 0}
+    - target: {fileID: 7279460843365351648, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: moveTo.y
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7279460843365351648, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: objectToMove
+      value: 
+      objectReference: {fileID: 7279460844701231032}
+    - target: {fileID: 7279460843878385336, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: moveTo.x
+      value: 64.50026
+      objectReference: {fileID: 0}
+    - target: {fileID: 7279460843878385336, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: moveTo.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7279460843878385336, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+      propertyPath: objectToMove
+      value: 
+      objectReference: {fileID: 7279460844701231032}
     - target: {fileID: 7279460844260936080, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
       propertyPath: PlayerCharacter
       value: 
@@ -25880,6 +25904,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+--- !u!4 &7279460844701231032 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7279460844556371422, guid: b31c0cc5bd79304479370f41fbba0a41, type: 3}
+  m_PrefabInstance: {fileID: 7279460844701231031}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8061037777478546311
 PrefabInstance:
   m_ObjectHideFlags: 0
