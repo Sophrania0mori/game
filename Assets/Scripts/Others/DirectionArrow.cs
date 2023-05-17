@@ -35,7 +35,7 @@ public class ArrowController : MonoBehaviour
             }
         }
 
-        if (arrow.activeSelf && playerTransform != null)
+        if (playerTransform != null)
         {
             if (movingRight)
             {
