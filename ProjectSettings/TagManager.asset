@@ -5,14 +5,16 @@ TagManager:
   serializedVersion: 2
   tags:
   - Obstacle
+  - Enemy
+  - Trap
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
-  - 
+  - Enemy
   - 
   - 
   - 
@@ -39,6 +41,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 1810599809
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
