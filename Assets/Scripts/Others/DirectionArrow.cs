@@ -6,6 +6,7 @@ public class ArrowController : MonoBehaviour
     [SerializeField] private float[] switchXValues;
     [SerializeField] private float[] switchYValues;
     [SerializeField] private Transform[] targets;
+    [SerializeField] private int switchDirectionIndex;
 
     private int currentTargetIndex = 0;
     private Transform playerTransform;
@@ -52,7 +53,7 @@ public class ArrowController : MonoBehaviour
                 }
             }
 
-            if (currentTargetIndex > 3)
+            if (currentTargetIndex > switchDirectionIndex)
             {
                 movingRight = false;
             }
